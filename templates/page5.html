@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+        }
+        #img{
+            /* 상대적인 위치속성 활성화 */
+            position: relative;
+            right: 30%;
+            left: 30%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- 분석결과시각화를 통해 느낀 생각에 대해 작성 -->
+    <h2>5.분석결과시각화</h2> 
+    <hr>
+    <table>
+        <h2>워드클라우드 생성</h2>
+        <td>
+            <div id="img">
+                <img src="{{url_for('static', filename='wordcloud.jpg')}}" alt='워드클라우드' height='500'/>
+            </div>
+            
+        </td>
+    </table>
+
+    <table>
+        <h2>2003~2024 드라마 장르 갯수</h2>
+        <td>
+            <img src="{{url_for('static', filename='sog.png')}}" alt='바그래프' width='750' />
+        </td>
+        <td>
+            <img src="{{url_for('static', filename='ong.png')}}" alt='파이그래프' width='500' height='500' />
+        </td>
+    </table>
+
+    <table>
+        <h2>년도별 드라마 장르 갯수</h2>
+        
+        <tr>
+            <img src="{{url_for('static', filename='전체년도_장르.png')}}" alt='전체년도_장르' width="80%"  />
+        </tr>
+        <tr>
+            <img src="{{url_for('static', filename='a.jpg')}}" alt='몇몇년도_장르' width="90%"/>
+        </tr>
+        <tr>
+            <img src="{{url_for('static', filename='상위6개.png')}}" alt='상위6개' width="90%" />
+        </tr>
+    </table>
+</body>
+
+</html>

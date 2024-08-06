@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            height: 700px;
+            width: 50%;
+            vertical-align: top;
+        }
+        #code {
+                width: 100%;
+                height: 700px;
+        }
+        ol{
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h2>4.데이터 전처리 과정</h2> 
+    <hr>
+    <table>
+        <td>
+            <ol type="1">
+                <li>
+                    <a href="{{url_for('img',num=1)}}" target="code">
+                        영문으로 된 자료(제목,장르명등)을 한국어로 번역
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{url_for('img',num=2)}}" target="code">
+                    수집한 데이터들을 기존의 데이터와 병합.
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{url_for('img',num=3)}}" target="code">
+                    장르 데이터의 종류를 보편화. 분석의 편의성과 데이터의 가독성 증가.
+                    <ul type="none">
+                        <li>ex> '멜로/드라마', '멜로 드라마'를 각각 '멜로'와 '드라마'로 수정.</li>
+                    </ul>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{url_for('img',num=4)}}" target="code">
+                    데이터 수집 과정에서 생긴 중복을 제거. 최초 수집 약 580개의 데이터 -> 최종 분석 데이터 약 500개
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{url_for('img',num=5)}}" target="code">
+                    드라마 출시년도를 기준으로 오름차순 정렬
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="{{url_for('img',num=6)}}" target="code">
+                    장르별 드라마갯수가 10개 미만인 데이터를 '기타'로 함축. 노이즈 데이터 최소화
+                    </a>
+                </li>
+        
+            </ol>
+        </td>
+        <td>
+            <iframe id="code" frameborder="0" name="code"></iframe>
+        </td>
+    </table>
+    
+            
+</body>
+</html>

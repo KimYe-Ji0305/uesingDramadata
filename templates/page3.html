@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ui{
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>3.데이터 수집</h2>
+    <hr>
+    <h3>데이터 수집 사이트</h3> 
+    <ul type="none">
+        
+                <li><a href='https://m.kinolights.com/discover/explore'>키노라이츠</a></li>
+                <li><a href='https://vod.kbs.co.kr/drama.html'>KBC</a></li>
+                <li><a href='https://www.imbc.com/broad/tv/drama/#location=1&page=1&EndYear=2023&Genre=0&Initial='>MBC</a></li>
+        
+    </ul>
+
+    <hr>
+    <h3>수집방법</h3> 
+    <ul>
+        <li>작품 탐색을 실행 할 사이트 찾기</li>
+        <li>크롤링을 통해 [ 제목, 방영연도, 장르 ] 순으로 수집</li>
+            <ol>
+                <li>작품포스터의 링크를 통해 정보를 수집 후 리스트에 저장</li>
+                <li>작품포스터가 다른 요소에 의해 가려지는 문제로 난항. 스크롤을 조절하는 등의 방법으로 오류 수정.</li>
+                <li>1~2 를 각 사이트 별로 반복</li>
+            </ol>
+    </ul>
+</body>
+
+</html>
